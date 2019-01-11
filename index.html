@@ -1,6 +1,5 @@
-
 <!doctype html>
-<html>
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,302 +10,40 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="css/board.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-      <div id="wrapper" style="margin-left: auto; width: 1000px;
-    margin-right: auto;">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-        <div id="header" class="main_elem">
-          <img src="img/sinoptic-logo.png" alt="погода" title="погода">
-
-          <form id="search-form" action="" method="get">
-              <input type="text" id="search-input" placeholder="Название населенного пункта, страны или региона">
-              <input type="submit" class="search-submit" value="">
-              <p style="color: #9D9D9D;
-              border-bottom: 1px dotted #9D9D9D; display:inline">Киев</p>
-          </form>
-          <div id="sLang" style="display:inline; float: right;">
-             Sinoptik.ua
-             <a href="">українською </a>
-          </div>
-          <div class="city">
-                <h1> Погода
-                  <strong>в Киеве</strong>
-                </h1>
-                <div class="currentRegion">Столица Украины</div>
-          </div>
-              <div id="topMenu" class="dCatalogOpen">
-                <span class="tMenu"> 7 дней </span>
-                <a class="menu-item" href="//sinoptik.ua/погода-киев/10-дней"> 10 дней </a>
-                <a class="otherCity" href=""> выбрать другой город </a>
-              </div>
-          </div>
-
-        <div id="content">
-          <div class="tabs">
-            <div class="tab" id="bd1">
-                    <p class="day-link" data-link="//sinoptik.ua/погода-киев/2016-10-05">Среда</p>
-                    <p class="date ">05</p>
-                    <p class="month">октября</p>
-                    <div class="weatherIco d330" title="Облачно с прояснениями, сильный дождь"><img class="weatherImg" src="img/d330.gif" alt=""></div>
-                    <div class="temperature">
-                    <div class="min">мин. <span>+11°</span></div>
-                    <div class="max">макс. <span>+14°</span></div>
-                    </div>
-            </div>
-            <div class="tab" id="bd2">
-                    <p class="day-link" data-link="//sinoptik.ua/погода-киев/2016-10-06">Четверг</p>
-                     <p class="date ">06</p>
-                     <p class="month">октября</p>
-                     <div class="weatherIco d320" title="Облачно с прояснениями, дождь">
-                      <img class="weatherImg" src="img/d320.gif" alt="">
-                    </div> <div class="temperature">
-                      <div class="min">мин. <span>+7°</span></div>
-                      <div class="max">макс. <span>+11°</span></div>
-                    </div>
-            </div>
-            <div class="tab" id="bd2">
-                    <p class="day-link" data-link="//sinoptik.ua/погода-киев/2016-10-07">Пятница</p>
-                     <p class="date ">07</p>
-                     <p class="month">октября</p>
-                     <div class="weatherIco d320" title="Переменная облачность, дождь">
-                      <img class="weatherImg" src="img/d220.gif" alt="">
-                    </div> <div class="temperature">
-                      <div class="min">мин. <span>+8°</span></div>
-                      <div class="max">макс. <span>+13°</span></div>
-                    </div>
-            </div>
-            <div class="tab" id="bd2">
-                    <p class="day-link" data-link="//sinoptik.ua/погода-киев/2016-10-08">Субота</p>
-                     <p class="date ">08</p>
-                     <p class="month">октября</p>
-                     <div class="weatherIco d320" title="Облачно с прояснениями, дождь">
-                      <img class="weatherImg" src="img/d320.gif" alt="">
-                    </div> <div class="temperature">
-                      <div class="min">мин. <span>+7°</span></div>
-                      <div class="max">макс. <span>+11°</span></div>
-                    </div>
-            </div>
-            <div class="tab" id="bd2">
-                    <p class="day-link" data-link="//sinoptik.ua/погода-киев/2016-10-09">Воскресенье</p>
-                     <p class="date ">09</p>
-                     <p class="month">октября</p>
-                     <div class="weatherIco d320" title="Облачно с прояснениями, дождь">
-                      <img class="weatherImg" src="img/d320.gif" alt="">
-                    </div> <div class="temperature">
-                      <div class="min">мин. <span>+6°</span></div>
-                      <div class="max">макс. <span>+13°</span></div>
-                    </div>
-            </div>
-            <div class="tab" id="bd2">
-                    <p class="day-link" data-link="//sinoptik.ua/погода-киев/2016-10-10">Понедельник</p>
-                     <p class="date ">10</p>
-                     <p class="month">октября</p>
-                     <div class="weatherIco d320" title="Облачно с прояснениями, дождь">
-                      <img class="weatherImg" src="img/d320.gif" alt="">
-                    </div> <div class="temperature">
-                      <div class="min">мин. <span>+2°</span></div>
-                      <div class="max">макс. <span>+7°</span></div>
-                    </div>
-            </div>
-            <div class="tab" id="bd2">
-                    <p class="day-link" data-link="//sinoptik.ua/погода-киев/2016-10-11">Вторник</p>
-                     <p class="date ">11</p>
-                     <p class="month">октября</p>
-                     <div class="weatherIco d320" title="Облачно с прояснениями, дождь">
-                      <img class="weatherImg" src="img/d320.gif" alt="">
-                    </div> <div class="temperature">
-                      <div class="min">мин. <span>+7°</span></div>
-                      <div class="max">макс. <span>+9°</span></div>
-                    </div>
-            </div>
-          </div>
+        <!-- Add your site or application content here -->
+        <table class="board"></table>
 
 
-          <div class="main_info">
-
-            <div class="">
-                <div id="left_side">
-                  <div class="imgBlock">
-                     <p class="today-time">Погода сегодня в 10:30</p>
-                     <div class="img">
-                       <img width="188" height="150" src="img/d000.jpg" alt="Ясно">
-                     </div>
-                     <div class="therm">
-                       <span style="height:49px;"></span>
-                     </div>
-                    <p class="today-temp" style="text-align: center;">+8°C</p>
-                </div>
-
-                </div>
-                <table id="info_table">
-                    <tr>
-                      <th colspan="1" style="border:none"></th>
-                      <th colspan="2">ночь</th>
-                      <th colspan="2">утро</th>
-                      <th colspan="2">день</th>
-                      <th colspan="2">вечер</th>
-                    </tr>
-                    <tr class="grey_time">
-                      <td style="border:none"></td>
-                      <td style="background-color:#f2f2f2">0:00</td>
-                      <td style="background-color:#f2f2f2">3:00</td>
-                      <td style="background-color:#f2f2f2">6:00</td>
-                      <td style="background-color:#f2f2f2">9:00</td>
-                      <td style="background-color:#f2f2f2">12:00</td>
-                      <td style="background-color:#f2f2f2">15:00</td>
-                      <td style="background-color:#f2f2f2">18:00</td>
-                      <td style="background-color:#f2f2f2">21:00</td>
-                    </tr>
-                    <tr>
-                      <td style="border:none"></td>
-                      <td>
-                        <div class="weatherIco n400" title="Сплошная облачность">
-                          <img class="weatherImg" src="img/n400.gif" alt="">
-                        </div>
-                      </td>
-                      <td>
-                        <div class="weatherIco n100" title="Небольшая облачность">
-                        <img class="weatherImg" src="img/n100.gif" alt="">
-                        </div>
-                      </td>
-                      <td>
-                         <div class="weatherIco n000" title="Ясно">
-                           <img class="weatherImg" src="img/n000.gif" alt="">
-                         </div>
-                      </td>
-                      <td>
-                        <div class="weatherIco d100" title="Небольшая облачность">
-                          <img class="weatherImg" src="img/d100.gif" alt="">
-                        </div>
-                      </td>
-                      <td>
-                        <div class="weatherIco d100" title="Небольшая облачность">
-                        <img class="weatherImg" src="img/d100.gif" alt="">
-                      </div>
-                    </td>
-                      <td>
-                        <div class="weatherIco d100" title="Небольшая облачность">
-                        <img class="weatherImg" src="img/d100.gif" alt="">
-                      </div>
-                    </td>
-                      <td>
-                        <div class="weatherIco d400" title="Сплошная облачность">
-                        <img class="weatherImg" src="img/d400.gif" alt="">
-                      </div>
-                    </td>
-                      <td>
-                        <div class="weatherIco n300" title="Облачно с прояснениями">
-                        <img class="weatherImg" src="img/n300.gif" alt="">
-                      </div>
-                    </td>
-                    </tr>
-                    <tr class="temperature">
-                      <td>Температура, С</td>
-                      <td>+8°</td>
-                      <td>+5°</td>
-                      <td>+4°</td>
-                      <td>+6°</td>
-                      <td>+6°</td>
-                      <td>+10°</td>
-                      <td>+13°</td>
-                      <td>+9°</td>
-                    </tr>
-                    <tr>
-                      <td>Чувствуется как</td>
-                      <td class="tem_sens">+6°</td>
-                      <td class="tem_sens">+4°</td>
-                      <td class="tem_sens">+2°</td>
-                      <td class="tem_sens">+6°</td>
-                      <td class="tem_sens">+10°</td>
-                      <td class="tem_sens">+13°</td>
-                      <td class="tem_sens">+13°</td>
-                      <td class="tem_sens">+9°</td>
-                    </tr>
-                    <tr style="background-color:#f2f2f2">
-                      <td>Давление, мм</td>
-                      <td>745</td>
-                      <td>747</td>
-                      <td>748</td>
-                      <td>749</td>
-                      <td>749</td>
-                      <td>749</td>
-                      <td>749</td>
-                      <td>749</td>
-                    </tr>
-                    <tr>
-                      <td>Влажность, %</td>
-                      <td>88</td>
-                      <td>94</td>
-                      <td>92</td>
-                      <td>83</td>
-                      <td>63</td>
-                      <td>54</td>
-                      <td>62</td>
-                      <td>87</td>
-                    </tr>
-                    <tr style="background-color:#f2f2f2">
-                      <td >Ветер, м/сек</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Вероятность осадков, %</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>5</td>
-                    </tr>
-                </table>
+        <span>Page displays the shortest route of knight between two squares on the chessboard. Click on the squares to select the start and end squares.</span>
 
 
 
-            </div>
-            <div id="top-description">
-              Ясным небо в Киеве было недолго, его снова затянуло облаками, которые продержатся до позднего вечера. Без осадков.
-            </div>
-            <div id="bottom_description" style="
-    display: inline-block;">
-              <div class="lSide" style="display: inline-block;width: 160px;">
-              <p class="infoHistory" style="margin-left: 10px;">
-                за последние 130 лет
-                <br>06 октября:
-              </p>
-              <p class="infoHistoryval">
-                    <i>макс</i>: <span>25.4°</span> (1966)<br>
-                    <i>мин</i>: <span>-3.4°</span> (1902)
-                </p>
-
-              </div>
-              <div class="rSide">
-                  Народный прогноз погоды: 6 октября отмечается Зачатие Пророка, Предтечи и Крестителя Господня Иоанна и почитается память святого Иннокентия, митрополита Московского. Иногда в этот день бывает тепло, но достаточно редко. Предстоящую зиму определяли так: если хорьки и куницы до срока меняют летний мех на зимний, то зима будет ранней.
-              </div>
-            </div>
-
-            <div class="lastYear" style="text-align: end;margin-right: 10px;">
-              <a title="погода в Киеве 06 октября 2015" href="//sinoptik.ua/погода-киев/2015-10-06">Погода в Киеве год назад</a>
-            </div>
 
 
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/logic.js"></script>
 
-          </div>
-
-
-        </div>
-        <div id="footer"></div>
-      </div>
-      </body>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
 </html>
